@@ -1,3 +1,8 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+  }
+
 h1 {
   color: black;
   text-align: center;
@@ -14,12 +19,20 @@ span {
   color: gold;
 }
 
-div {
+.item{
   background-color: black;
-  border-radius: 10%;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 30px;
+  color: #fff;
 }
 
-button {
-  background-color: gold;
-  border-radius: 10%;
+
+a {
+  background: #febe01;
+  color: #332100;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
 }
