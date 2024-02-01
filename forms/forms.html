@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Activity 1.7.1</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 100px; /* Adjust the width as needed */
+     
+      }
+
+      
+    </style>
+  </head>
+  <body style="justify-content: flex-start">
+    <h1>HTML Form:</h1>
+    <div>
+      <form action="./forms.html" style="">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" />
+        <br />
+        <br />
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" />
+        <br />
+        <br />
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" />
+        <br />
+        <br />
+        <p>Choose your favorite Web language:</p>
+
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+</html>
