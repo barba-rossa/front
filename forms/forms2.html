@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="">Enter Name:</label>
+        <input type="text" /><br />
+        <label for="">Enter adress:</label>
+        <input type="text" /><br />
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female" /><br>
+        <label for="email">Email</label>
+        <input type="email"><br>
+        <label for="terms">Agree with terms?</label>
+        <input type="checkbox">
+      </fieldset>
+      <!-- Login -->
+      <fieldset>
+        <legend>Login</legend>
+        <label for="username">User Name:</label>
+        <input type="text" placeholder="E-mail or User ID"><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter 6 to 20 chars"><br>
+
+      </fieldset>
+      <!-- Other Controls -->
+      <fieldset>
+        <legend>Other controls</legend>
+        <input type="file"><br>
+        <button>Button</button><br>
+        <label for="review">Please write to us!</label><br>
+        <textarea name="review" id="review" cols="30" rows="10" placeholder="Your comments please..." style="width: 100%;"></textarea><br>
+        <label for="payment">Method of payment:</label>
+        <select name="payment" id="payment">
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit</option>
+            <option value="etransfer">E-transfer</option>
+        </select>
+      </fieldset>
+      <input type="submit" value="Submit Form">
+    </form>
+  </body>
+</html>
