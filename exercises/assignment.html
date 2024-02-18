@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayrton Senna</title>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 0;
+      }
+      span {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: gray;
+      }
+
       table {
         width: 100%;
         font-family: arial, sans-serif;
@@ -24,17 +41,21 @@
     </style>
   </head>
   <body>
-    <h1>Ayrton Senna's Fan Page</h1>
-    <nav>
-      <div>
-        <ul style="display: flex; justify-content: space-between">
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#childhood">Childhood</a></li>
-          <li><a href="#career">Career</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+
+      <h1>Ayrton Senna's Fan Page</h1>
+      <span>page by <a href="https://github.com/barba-rossa">Barbosa</a>, Felipe</span>
+      <nav>
+        <div>
+          <ul style="display: flex; justify-content: space-evenly">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#childhood">Childhood</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <hr />
     <section id="intro">
       <h2>Intro</h2>
@@ -281,11 +302,11 @@
         <legend>Fill form</legend>
         <form action="mailto:test@gmail.com" method="post" enctype="text/plain">
           <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" /><br />
+          <input type="text" id="name" name="name" placeholder="Jane Doe" /><br />
           <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" /><br />
+          <input type="email" id="email" name="email" placeholder="jane.doe@mail.ca" /><br />
           <label for="message">Message:</label><br />
-          <textarea id="message" name="message"></textarea><br />
+          <textarea id="message" name="message" placeholder="Your message here..."></textarea><br />
           <input type="submit" value="Submit" />
         </form>
       </fieldset>
